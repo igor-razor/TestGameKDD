@@ -12,15 +12,15 @@ public class CMenuClick : CSoundManager, IPointerClickHandler
     {
         //Debug.Log(gameObject.name);
         CS.MainAudio = Resources.LoadAll<AudioClip>("Sounds/" + gameObject.name);
-
+        PlaySound(CS.MainAudio[(int)CS.M.a00startgame]);
         // foreach (AudioClip audio in CS.MainAudio) { Debug.Log(audio.name); }
 
         //Debug.Log(CS.MainAudio);
         //throw new NotImplementedException();
 
-        Material mat1 = new Material(Shader.Find("Specular"));
-        mat1.color = Color.yellow;
-        gameObject.GetComponent<MeshRenderer>().material = mat1;
+        //Material mat1 = new Material(Shader.Find("Specular"));
+        //mat1.color = Color.yellow;
+        //gameObject.GetComponent<MeshRenderer>().material = mat1;
     }
 
     // Start is called before the first frame update
